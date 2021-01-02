@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>me.fo0.spring.start.reactive.web</groupId>
+	<artifactId>spring-start-reactive-web</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>spring-start-reactive-web</name>
+
+	<properties>
+		<!-- java -->
+		<java.version>1.8</java.version>
+
+
+		<!-- misc -->
+		<encoding>UTF-8</encoding>
+		<version.jdk>${java.version}</version.jdk>
+		<project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<maven.compiler.testSource>${java.version}</maven.compiler.testSource>
+		<maven.compiler.testTarget>${java.version}</maven.compiler.testTarget>
+		<project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
+		<maven.assembly.plugin>3.1.0</maven.assembly.plugin>
+		<maven.compiler.plugin>3.7.0</maven.compiler.plugin>
+		<maven.war.plugin>3.0.1</maven.war.plugin>
+		<maven.source.plugin>3.0.1</maven.source.plugin>
+
+		<!-- spring -->
+		<spring.version>2.2.6.RELEASE</spring.version>
+		<spring.framework.version>5.2.4.RELEASE</spring.framework.version>
+		<openapi.version>1.4.4</openapi.version>
+
+		<!-- tools -->
+		<lombok.version>1.18.12</lombok.version>
+
+		<!-- dependencies -->
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webflux</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-webflux-ui</artifactId>
+			<version>${openapi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-webflux-core</artifactId>
+			<version>${openapi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<version>${spring.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+</project>
